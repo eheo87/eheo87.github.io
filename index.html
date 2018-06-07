@@ -13,7 +13,12 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link href="css/resume.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="js/main.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+
 
   </head>
 
@@ -21,7 +26,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Start Bootstrap</span>
+        <span class="d-block d-lg-none">수원블루윙즈 팬페이지</span>
         <span class="d-none d-lg-block">
           <img class="img-fluid img-profile mx-auto mb-2" src="img/suwon.png" alt="">
         </span>
@@ -241,8 +246,7 @@
             						</tbody>
             					</table>
             				</div>
-
-    			</div>
+    			    </div>
 
           <div class="history 2000" style="display: none">
             				<div class="top_area">
@@ -647,60 +651,34 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="squad">
         <div class="my-auto">
           <h2 class="mb-5">선수단</h2>
-
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-          <ul class="list-inline list-icons">
-            <li class="list-inline-item">
-              <i class="devicons devicons-html5"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-css3"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-javascript"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-jquery"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-sass"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-less"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-bootstrap"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-wordpress"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-grunt"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-gulp"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicons devicons-npm"></i>
-            </li>
-          </ul>
-
-          <div class="subheading mb-3">Workflow</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Mobile-First, Responsive Design</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Browser Testing &amp; Debugging</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Functional Teams</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Agile Development &amp; Scrum</li>
+        <div class="tab_bar container">
+          <ul>
+            <li><a onclick="arr2(3)">공격수</a></li>
+            <li><a onclick="arr2(2)">미드필더</a></li>
+            <li><a onclick="arr2(1)">수비수</a></li>
+            <li><a onclick="arr2(0)">골키퍼</a></li>
           </ul>
         </div>
+            <div class ="squad FW" style="display: block">
+              <div class="top_area">
+              <img src="img/FW.png">
+            </div>
+          </div>
+            <div class ="squad MF" style="display: none">
+              <div class="top_area">
+              <img src="img/MF.png">
+            </div>
+          </div>
+            <div class ="squad CB" style="display: none">
+              <div class="top_area">
+              <img src="img/CB.png">
+            </div>
+          </div>
+            <div class ="squad GK" style="display: none">
+              <div class="top_area">
+              <img src="img/GK.png">
+            </div>
+          </div>
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="schedule">
@@ -1004,13 +982,5 @@
       </section>
 
     </div>
-
-    <script src="js/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/resume.min.js"></script>
-
-
   </body>
-
 </html>

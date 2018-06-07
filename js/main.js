@@ -35,4 +35,41 @@
             }
         }
     }
+    
+      function arr2(n) {
+    var tables = document.getElementsByClassName("squad");
+
+    if (n === 0) {
+      for (let i = 0; i < tables.length; i++) {
+          if (tables[i].classList[1] === "GK") {
+              tables[i].style.display = "block";
+          } else {
+              tables[i].style.display = "none";
+          }
+      }
+    } else if (n === 1) {
+        for (let i = 0; i < tables.length; i++) {
+            if (tables[i].classList[1] === "CB") {
+                tables[i].style.display = "block";
+            } else {
+                tables[i].style.display = "none";
+            }
+        }
+    } else if (n === 2) {
+        for (let i = 0; i < tables.length; i++) {
+            if (tables[i].classList[1] === "MF") {
+                tables[i].style.display = "block";
+            } else {
+                tables[i].style.display = "none";
+            }
+        }
+    } else if (n === 3) {
+        for (let i = 0; i < tables.length; i++) {
+            if (tables[i].classList[1] === "FW") {
+                tables[i].style.display = "block";
+            } else {
+                tables[i].style.display = "none";
+            }
+        }
+    }
 }
