@@ -35,8 +35,9 @@
             }
         }
     }
-    
-      function arr2(n) {
+}
+
+function arr2(n) {
     var tables = document.getElementsByClassName("squad");
 
     if (n === 0) {
